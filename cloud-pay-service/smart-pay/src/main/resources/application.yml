@@ -1,0 +1,16 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /api
+
+spring:
+  profiles:
+    active: dubbo
+  application:
+    name: "smart-pay"
+  cloud:
+    #注册中心配置
+    nacos:
+      discovery:
+        namespace: 14198254-40cb-49f4-85b7-afad8042aede
+        server-addr: "10.3.133.160:8848"

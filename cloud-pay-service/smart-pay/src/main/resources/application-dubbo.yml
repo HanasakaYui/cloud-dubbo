@@ -1,0 +1,14 @@
+dubbo:
+  #协议部分的配置
+  protocol:
+    #可以是 http redis thrift
+    name: "dubbo"
+    #自增扫描端口 从20880开始
+    port: -1
+  #注册中心
+  registry:
+    # nacos://IP地址:端口号
+    address: nacos://10.3.133.160:8848
+  cloud:
+    #订阅
+    subscribed-services: "smart-pay-alipay"

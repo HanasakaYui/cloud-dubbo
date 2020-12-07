@@ -1,0 +1,16 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    #服务名称
+    name: cloud-feign-provider
+  cloud:
+    nacos:
+      discovery:
+        namespace: 14198254-40cb-49f4-85b7-afad8042aede
+        #IP地址、端口号
+        #集群使用','隔开
+        server-addr: 10.3.133.160:8848
